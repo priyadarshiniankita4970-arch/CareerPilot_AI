@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101326">
+  <title>CareerPilot AI — Find your next opportunity</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="CareerPilot home"><span class="brand-mark">✦</span><span>CareerPilot<span class="brand-ai"> AI</span></span></a>
+    <nav class="nav-links"><a href="#jobs">Explore jobs</a><a href="#features">Why CareerPilot</a></nav>
+    <div class="top-actions"><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">☼</button><button id="loginOpen" class="btn btn-quiet">Log in</button><button id="registerOpen" class="btn btn-primary">Get started <span>↗</span></button><button id="dashboardOpen" class="btn btn-primary hidden" type="button">Dashboard</button><button id="logoutBtn" class="btn btn-quiet hidden">Log out</button></div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Make your next move<br>your <span class="gradient-text">best move.</span></h1>
+        <p class="hero-sub">A smarter space to discover opportunities, showcase your skills, and move your career forward.</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-large" href="#jobs">Explore opportunities <span>↗</span></a><button id="heroRecruiter" class="btn btn-outline btn-large">I'm hiring</button></div>
+        <div class="social-proof"><div class="avatar-stack"><span>J</span><span>A</span><span>M</span><span>+</span></div><div><strong>Built for ambitious people</strong><small>Students · Recruiters · New beginnings</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-tag tag-top"><span class="tag-icon purple">✧</span><span><b>Career match</b><small>Find your fit</small></span><span class="tag-check">✓</span></div>
+        <div class="profile-card glass">
+          <div class="card-top"><span class="mini-label">CAREER SNAPSHOT</span><span class="live-dot">● LIVE</span></div>
+          <div class="profile-head"><div class="profile-avatar">CP</div><div><h3>Your next opportunity</h3><p>Starts with one step</p></div></div>
+          <div class="match-label"><span>Skill alignment</span><b>82%</b></div><div class="progress"><span style="width:82%"></span></div>
+          <div class="skill-pills"><span>Python</span><span>Problem solving</span><span>Communication</span></div>
+          <div class="card-divider"></div><div class="next-step"><span class="next-icon">↗</span><span><b>Keep moving forward</b><small>Discover roles that match your goals</small></span></div>
+        </div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon green">✓</span><span><b>One step closer</b><small>Your future is in motion</small></span></div>
+      </div>
+    </section>
+
+    <section class="stats wrap"><div><strong>01</strong><span>One profile, new possibilities</span></div><div><strong>02</strong><span>Discover roles that fit</span></div><div><strong>03</strong><span>Track every application</span></div><div><strong>04</strong><span>Prepare with confidence</span></div></section>
+
+    <section id="jobs" class="jobs-section wrap">
+      <div class="section-heading"><div><div class="eyebrow">OPPORTUNITY BOARD</div><h2>Find work that <span class="gradient-text">moves you.</span></h2><p>Explore open roles and take your next step.</p></div><button id="refreshJobs" class="btn btn-outline">↻ Refresh jobs</button></div>
+      <div class="search-panel"><label class="search-field"><span>⌕</span><input id="searchInput" placeholder="Job title, company, or skill" autocomplete="off"></label><label class="search-field"><span>⌖</span><input id="locationInput" placeholder="City or remote"></label><select id="typeFilter" aria-label="Job type"><option value="">All job types</option><option>Full-time</option><option>Part-time</option><option>Internship</option><option>Contract</option><option>Remote</option></select><button id="searchBtn" class="btn btn-primary">Search roles</button></div>
+      <div class="jobs-meta"><span id="jobsCount">Loading opportunities…</span><span class="sort-note">Fresh opportunities for your next chapter</span></div>
+      <div id="jobsGrid" class="jobs-grid"><div class="empty-state"><div class="loader"></div><p>Finding opportunities…</p></div></div>
+    </section>
+
+    <section id="features" class="features-section wrap">
+      <div class="section-heading centered"><div><div class="eyebrow">A BETTER WAY FORWARD</div><h2>Your career toolkit, <span class="gradient-text">all in one place.</span></h2><p>Less scattered searching. More intentional progress.</p></div></div>
+      <div class="feature-grid"><article class="feature-card"><div class="feature-icon lavender">⌕</div><h3>Discover opportunities</h3><p>Search by role, location, and job type to find a better fit for your goals.</p></article><article class="feature-card"><div class="feature-icon mint">↗</div><h3>Show your strengths</h3><p>Upload your resume and compare your skills with the requirements of a role.</p></article><article class="feature-card"><div class="feature-icon peach">✧</div><h3>Prepare with purpose</h3><p>Practice interview questions and sample answers for your target role.</p></article><article class="feature-card"><div class="feature-icon blue">▤</div><h3>Keep your progress</h3><p>Track submitted applications and follow status changes from your dashboard.</p></article></div>
+    </section>
+
+    <section class="cta wrap"><div><div class="eyebrow">YOUR NEXT CHAPTER</div><h2>Good things happen<br>when you <span class="gradient-text">get started.</span></h2><p>Create your free profile and take the first step.</p></div><button id="ctaRegister" class="btn btn-primary btn-large">Create your account ↗</button><div class="cta-orb"></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="/"><span class="brand-mark">✦</span><span>CareerPilot<span class="brand-ai"> AI</span></span></a><span>Designed for your next chapter.</span><span>© <span id="year"></span> CareerPilot</span></footer>
+
+  <div id="authModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal-backdrop" data-close="authModal"></div><div class="modal-card"><button class="modal-close" data-close="authModal" aria-label="Close">×</button><div class="modal-logo">✦</div><div class="eyebrow" id="authEyebrow">WELCOME ABOARD</div><h2 id="authTitle">Your next chapter awaits.</h2><p id="authDescription">Log in to continue your career journey.</p><form id="authForm"><div id="nameGroup" class="form-group hidden"><label for="authName">Full name</label><input id="authName" minlength="2" placeholder="e.g. Alex Morgan"></div><div class="form-group"><label for="authEmail">Email address</label><input id="authEmail" type="email" required placeholder="you@example.com"></div><div class="form-group"><label for="authPassword">Password</label><input id="authPassword" type="password" required minlength="8" placeholder="At least 8 characters"></div><div id="companyGroup" class="form-group hidden"><label for="authCompany">Company name</label><input id="authCompany" placeholder="Your company"></div><div id="roleGroup" class="form-group hidden"><label for="authRole">I am joining as</label><select id="authRole"><option value="student">Student / Job seeker</option><option value="recruiter">Recruiter / Hiring team</option></select></div><div id="authError" class="form-error hidden"></div><button id="authSubmit" class="btn btn-primary btn-full" type="submit">Log in <span>↗</span></button></form><p class="modal-switch" id="authSwitch">New to CareerPilot? <button type="button" id="switchAuth">Create an account</button></p></div></div>
+
+  <div id="dashboardModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="dashboardTitle"><div class="modal-backdrop" data-close="dashboardModal"></div><div class="modal-card modal-wide"><button class="modal-close" data-close="dashboardModal" aria-label="Close">×</button><div class="eyebrow">YOUR WORKSPACE</div><h2 id="dashboardTitle">Your dashboard</h2><p id="dashboardWelcome">Welcome back.</p><div id="dashboardContent"></div></div></div>
+  <div id="jobModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="jobModalTitle"><div class="modal-backdrop" data-close="jobModal"></div><div class="modal-card modal-wide"><button class="modal-close" data-close="jobModal" aria-label="Close">×</button><div class="eyebrow">RECRUITER WORKSPACE</div><h2 id="jobModalTitle">Post an opportunity</h2><p>Reach people ready to make their next move.</p><form id="jobForm" class="job-form"><input type="hidden" id="editJobId"><div class="form-grid"><div class="form-group"><label>Job title</label><input id="jobTitle" required minlength="2" placeholder="Python Developer"></div><div class="form-group"><label>Company</label><input id="jobCompany" required minlength="2" placeholder="Company name"></div><div class="form-group"><label>Location</label><input id="jobLocation" required placeholder="Bhubaneswar / Remote"></div><div class="form-group"><label>Job type</label><select id="jobType"><option>Full-time</option><option>Part-time</option><option>Internship</option><option>Contract</option><option>Remote</option></select></div><div class="form-group"><label>Salary range</label><input id="jobSalary" placeholder="₹3–5 LPA / Not disclosed"></div><div class="form-group"><label>Experience</label><input id="jobExperience" placeholder="Fresher / 1–2 years"></div></div><div class="form-group"><label>Skills (comma separated)</label><input id="jobSkills" placeholder="Python, FastAPI, MongoDB"></div><div class="form-group"><label>Job description</label><textarea id="jobDescription" required minlength="20" rows="4" placeholder="Describe the role, responsibilities, and what makes this opportunity great…"></textarea></div><div id="jobError" class="form-error hidden"></div><button class="btn btn-primary btn-full" type="submit">Save opportunity ↗</button></form></div></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
